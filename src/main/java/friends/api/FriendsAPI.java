@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/friends")
+@RestController
 @RequiredArgsConstructor(onConstructor = @_(@Autowired))
 public class FriendsAPI {
 
