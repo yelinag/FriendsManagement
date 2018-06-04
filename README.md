@@ -1,12 +1,19 @@
 # Friends Management
 
-One Paragraph of project description goes here
+It's a social networking demo application where you can add friend, subscribe, post and block. 
 
-## Getting Started
+In this project, Spring framework is used for main implementation and mongodb to store users data. Users can perform following actions
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1. Add friend
+2. Retrieve current friends
+3. Retrieve mutual friends between two individuals
+4. Subscribe/follow person
+5. Block person
+6. Retrieve post notify user list 
 
 ### Prerequisites
+
+Docker is necessary for deployment.
 
 ```
 Docker
