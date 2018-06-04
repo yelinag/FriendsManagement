@@ -22,7 +22,7 @@ Run following commands
 
 ## Running the application
 
-After running, go to `localhost:8080`
+Server is running on `localhost:8080`
 
 For documentations, go to `localhost:8080/swagger-ui.html`
 
@@ -30,6 +30,8 @@ For documentations, go to `localhost:8080/swagger-ui.html`
 
 1. `sudo docker exec -it mongo bash`
 2. `mongo`
+3. `db.createCollection("friendsmanagement")`
+4. `use friendsmanagement`
 3. `db.persons.insert([{ "email" : "andy@example.com", "name" : "Andy", "followers" : [ "john@example.com" ], "blockers" : [ ], "friends" : [ "john@example.com", "common@example.com" ] }, { "email" : "john@example.com", "name" : "John", "followers" : [ ], "blockers" : [ ], "friends" : [ "andy@example.com" ] },{ "email" : "common@example.com", "name" : "John", "followers" : [ ], "blockers" : [ ], "friends" : [ "andy@example.com" ] }, { "email" : "lisa@example.com", "name" : "John", "followers" : [ ], "blockers" : [ ], "friends" : [ ] }])`
 
 ## Authors
