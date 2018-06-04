@@ -24,15 +24,14 @@ Run following commands
 
 Server is running on `localhost:8080`
 
-For documentations, go to `localhost:8080/swagger-ui.html`
+For documentations, please go to `localhost:8080/swagger-ui.html` for API usages
 
 ## Inserting data
 
 1. `sudo docker exec -it mongo bash`
 2. `mongo`
-3. `db.createCollection("friendsmanagement")`
 4. `use friendsmanagement`
-3. `db.persons.insert([{ "email" : "andy@example.com", "name" : "Andy", "followers" : [ "john@example.com" ], "blockers" : [ ], "friends" : [ "john@example.com", "common@example.com" ] }, { "email" : "john@example.com", "name" : "John", "followers" : [ ], "blockers" : [ ], "friends" : [ "andy@example.com" ] },{ "email" : "common@example.com", "name" : "John", "followers" : [ ], "blockers" : [ ], "friends" : [ "andy@example.com" ] }, { "email" : "lisa@example.com", "name" : "John", "followers" : [ ], "blockers" : [ ], "friends" : [ ] }])`
+3. `db.persons.insert([ { "email":"andy@example.com", "name":"Andy", "followers":[ ], "blockers":[ ], "friends":[ "common@example.com" ] }, { "email":"john@example.com", "name":"John", "followers":[ ], "blockers":[ ], "friends":[ "common@example.com" ] }, { "email":"common@example.com", "name":"John", "followers":[ ], "blockers":[ ], "friends":[ "andy@example.com" ] }, { "email":"lisa@example.com", "name":"John", "followers":[ ], "blockers":[ ], "friends":[ ] }, { "email":"kate@example.com", "name":"John", "followers":[ ], "blockers":[ ], "friends":[ ] } ])`
 
 ## Authors
 
